@@ -1,0 +1,37 @@
+liveClass12Feb
+shortcut for --> System.err.println()   : serr
+
+declaring a variable : makes a container so it can hold some information
+    datatype name
+    int age;                   a cup but empty
+assigning a variable:  store  some information to a variable
+    variableName = value       it has been already given before a datatype
+declaring & assigning :
+
+non-primitive (object types):
+    Strings: sequence of characters
+
+whole numbers:
+            byte, short, int(the default for the compiler for whole number), long
+floating numbers:
+            float, double(the default for the compiler for float number),
+characters:
+            char
+boolean:
+            boolean
+Naming Convention
+    convention: what everyone follows
+
+    package:lowercase, no space, use underscore for multiple words
+        ex: today_is_sunday
+
+    classes: first letter is only uppercase in word
+        ex TodayIsSunday
+
+    variables: camelcase
+        ex : todayIsSunday
+
+
+
+
+
