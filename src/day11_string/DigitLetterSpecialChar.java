@@ -9,16 +9,21 @@ public class DigitLetterSpecialChar {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a word to check entryirst character");
         String entry = input.nextLine();
-        if (Character.isDigit(entry.charAt(0))) {             //if( entry >= '0' && entry <= '9'){
-            System.out.println("first character is digit");
-        } else if (Character.isLetter(entry.charAt(0))) {     //else if( entry >= 'A' && entry <= 'Z'){
-            if (Character.isLowerCase(entry.charAt(0))) {      //else if( entry >= 'a' && entry <= 'z'){
-                System.out.println("first character is lowercase letter");
-            } else {
-                System.out.println("first character is uppercase letter");
+
+        if (entry.length()>0) {           //without writing of this line code gives error when empty string exists
+            if (Character.isDigit(entry.charAt(0))) {             //if( entry >= '0' && entry <= '9'){
+                System.out.println("first character is digit");
+            } else if (Character.isLetter(entry.charAt(0))) {     //else if( entry >= 'A' && entry <= 'Z'){
+                if (Character.isLowerCase(entry.charAt(0))) {      //else if( entry >= 'a' && entry <= 'z'){
+                    System.out.println("first character is lowercase letter");
+                } else {
+                    System.out.println("first character is uppercase letter");
+                }
+            } else {// if (Character.isSpaceChar(entry.charAt(0))) {
+                System.out.println("first character is special character");
             }
-        } else{// if (Character.isSpaceChar(entry.charAt(0))) {
-            System.out.println("first character is special character");
+        }else{
+            System.out.println("String is empty! ");
         }
 
         }
