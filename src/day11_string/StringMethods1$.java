@@ -34,7 +34,7 @@ public class StringMethods1$ {
 
         String str4 = "          Cydeo School";
 
-       str4 =  str4.trim(); //"Cydeo SchooL"
+       str4 =  str4.trim(); //"Cydeo SchooL"           //removes all spaces
 
         System.out.println(str4);
 
