@@ -12,15 +12,15 @@ public class StringMethods1$ {
         System.out.println(str1);
 
 
-        //------------------1-----------------------
+        System.out.println("------------------1-----------------------");
 
         String str2 = "java programming";
 
-       String str3 = str2.toUpperCase(); //"JAVA PROGRAMMING"
+        String str3 = str2.toUpperCase(); //"JAVA PROGRAMMING"
 
         System.out.println(str2);
 
-        //---------------------2------------------------
+        System.out.println("------------------2-----------------------");
 
         String word = "Wooden Spoon";
 
@@ -30,32 +30,34 @@ public class StringMethods1$ {
 
         System.out.println(word);
 
-        //---------------------------------------------
+        System.out.println("------------------3-----------------------");
 
         String str4 = "          Cydeo School";
 
-       str4 =  str4.trim(); //"Cydeo SchooL"           //removes all spaces
+        str4 =  str4.trim(); //"Cydeo SchooL"           //removes all spaces
 
         System.out.println(str4);
 
 
-        //---------------------------------------------
+        System.out.println("------------------4-----------------------");
 
         String sentence1 = "Today is Sunday, and we have Java Class";
 
-        int index1 = sentence1.indexOf('w');
+        int index1 = sentence1.indexOf('w');    //21
 
         System.out.println(index1);
 
+        System.out.println("------------------5-----------------------");
 
         String s1 = "I Love Java Programming";
 
-        int firstA = s1.indexOf('a');
+        int firstA = s1.indexOf('a');   //8
 
         System.out.println(firstA);
+        System.out.println("------------------6-----------------------");
 
-        int secondA = s1.indexOf("a ");
-
+        int secondA = s1.indexOf("a ");   // to reach second character of a I have added what character comes after a
+//                if I would reach third a then I added what after a right there "am"
 
         String s2 = "Java Python JavaScript Cydeo Python";
 
@@ -63,11 +65,13 @@ public class StringMethods1$ {
 
         System.out.println(a1);
 
-        int a2 = s2.indexOf("a Python");
+        int a2 = s2.indexOf("a Python"); //or
+        int aa = s2.indexOf("va")+1;
 
         System.out.println(a2);
+        System.out.println(aa);
 
-        int a3 = s2.indexOf("avaS");
+        int a3 = s2.indexOf("avaS");  // it has been made more unique
 
         System.out.println(a3);
 
@@ -75,14 +79,20 @@ public class StringMethods1$ {
 
         System.out.println(a4);
 
+        System.out.println("------------------7-----------------------");
 
-        //-----------------------------------------
 
         String w = "Java";
 
         System.out.println(w.indexOf('a')); //1
 
         System.out.println(w.lastIndexOf('a')); //3
+        System.out.println(w.lastIndexOf("av"));  //1
+        System.out.println(w.lastIndexOf("ava"));  //1
+        System.out.println(w.lastIndexOf("Java"));  //0
+        System.out.println(w.lastIndexOf("Jav"));   //0
+
+        System.out.println("------------------8-----------------------");
 
         String w2 = "Java Python JavaScript Cydeo Python";
 
