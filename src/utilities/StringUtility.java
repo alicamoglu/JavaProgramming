@@ -14,4 +14,36 @@ public class StringUtility {
         }
         return reverse;
     }
+    public static boolean isContain(String[] array1,String element) {
+        int a = 0;
+        for (String s : array1) {
+            if(s.equals(element)){
+                a++;
+            }
+        }
+        if (a != 0){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    public static int firstIndexArrayElement(String[] array1,String element) {
+        int index = -1;            // when element not contained it gives -1 that's why is negative
+        for (int i = 0; i < array1.length; i++) {
+            if(array1[i] == element){
+                index = i;
+                break;
+            }
+        }
+        return index;
+    }
+    public static int lastIndexArrayElement(String[] array1,String element) {
+        int index = -1;             // when element not contained it gives -1 that's why is negative
+        for (int i = 0; i < array1.length; i++) {
+            if(array1[i] == element){
+                index = i;                // if break after first meeting with
+                            }
+        }
+        return index;
+    }
 }

@@ -1,0 +1,72 @@
+arraylist can not be multidimensional but nested
+with set method size is not chenged replace new and old value
+
+with add method is the size increase and new value can be placed in the middle with  given index
+
+remove method removes first metching object with index or variable written in
+but when the object to remove is a int 20 when you pass in remove(20) it gives error since it primitive
+...remove(Integer.valueOf(20) must be used
+
+boolean r1 = arrayList.remove(....)
+arrayList.clear()   makes length = 0
+indexOf gives first lastIndexOf gives last index it met.
+if indexOf == lastIndexOf then that element is unique. like indexOf(each) == lastIndexOf(each) in for loop
+nonDupliceted arraylist to built we use if arrayList.contains(each) \n continue... in for loop
+in String is usid equals() method to compare if not the same object if they same character in them.
+also for two arrayList it is uset to compare if not the same object they are if they have the same elements
+but in arraylist order is also matter.
+example
+        ArrayList<Integer> l1 = new ArrayList<>();
+        ArrayList<Integer> l2 = new ArrayList<>();
+        System.out.println(l1 == l2);          false  allthough they have the same elements they refer different in the heap
+        System.out.println(l1.equals(l2));
+
+arrayList can not be literal initialized like array so: int[] arr = {...}   but with addAll(another arraylist) at the end
+or arrayList.addAll(1,anotherArrayList)  orderly middle inserted.
+but it gives ERROR when multiple argument like addAll(25,36,36,25)
+to handle with this problem we use asList method so:  scores.addAll( Arrays.asList(75, 85, 95, 70, 80) );
+this asList methods is used not only in addAll method but also any of the place to pass multiple elements like removeAll
+
+        Integer[] nums = {1, 2, 3, 4, 5, 6, 7, 8};                    //array
+        ArrayList<Integer> l1 = new ArrayList<>( Arrays.asList(nums) );  //array list actually 1. way array to arraylist
+        l1.addAll(  Arrays.asList(nums) );                  // 2. way array to arraylist but careful if primitive in array
+        ArrayList<String> groceriesList = new ArrayList<>();
+        groceriesList.addAll(
+                Arrays.asList("Eggs", "Potato",  "Milk", "Tomato", "Rice", "Orange", "Strawberry", "Blueberry", "Paper towels")
+        );
+
+containsAll,removeAll,addAll,retainAll are bulkoperators both arraylist and contains methonds
+containsAll is used with Arrays.asList and gives boolean result
+
+convertion to array from arrrayList
+        ArrayList<String> list2 = new ArrayList<>( Arrays.asList("Java", "Python", "C#") );
+        String[] languages = list2.toArray(new String[0]);     // if [10] comes many null and since it new no problem less length then arraylist
+//      String[] languages = list2.toArray(new String[list2.size()]);  // this can be also
+
+        ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
+
+         Integer[] n = nums.toArray(new Integer[0]);
+new String[0] this is called intentiate
+array does not have many methods as disadvantige
+
+
+import java.util.Collections;
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 8));
+        int max = Collections.max(list);
+        int min = Collections.min(list);  // array list is also in Collections but to use some methods Collections must be imported
+        sort , reverse, swap (Collections.swap(students, 0 , 1); change the order of elements given index 0 and 1 )
+
+
+
+ArrayList<Integer> numbers = new ArrayList<>();
+numbers.add(10);
+numbers.add(20);
+numbers.add(30);
+numbers.add(40);
+
+ArrayList<Integer> list1 = new ArrayList<>();
+list1.add(1);
+list1.add(2);
+list1.add(3);
+
+list1.addAll(1, numbers);                       // if both are arraylist Arrays.asList is not needed
