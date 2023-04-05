@@ -1,0 +1,9 @@
+instance ---> copy
+java prioritize the local variable this.variable onder class is instance
+
+this
+	reference to the instance of the class
+
+	this is mainly used to differentiate between local variables and instance variables
+    instance variables have default value
+    local variables do not have default values
