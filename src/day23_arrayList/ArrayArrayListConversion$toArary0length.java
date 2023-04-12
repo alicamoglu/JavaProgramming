@@ -3,7 +3,7 @@ package day23_arrayList;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ArrayArrayListConversion {
+public class ArrayArrayListConversion$toArary0length {
 
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class ArrayArrayListConversion {
         System.out.println(list);
 
 
-        System.out.println("------------------------------------------------------");
+        System.out.println("------------------------1------------------------------");
 
 
         ArrayList<String> list2 = new ArrayList<>( Arrays.asList("Java", "Python", "C#") );
@@ -24,7 +24,7 @@ public class ArrayArrayListConversion {
 
         System.out.println(Arrays.toString(languages));
 
-        System.out.println("------------------------------------------------------");
+        System.out.println("-------------------------2-----------------------------");
 
         ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
 
